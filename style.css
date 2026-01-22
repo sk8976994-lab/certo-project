@@ -1,0 +1,754 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spreads elements across the main axis */
+    align-items: center; /* Centers elements vertically */
+    padding: 10px 20px;
+    background-color: #f3f4f1; /* White background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.certo-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007aff; /* Blue color from the logo in the image */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    display: block;
+}
+
+/* Styling for the call-to-action button */
+.cta-button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+/* Basic styling for potential dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.hero-section {
+    background-color: #ffffff; /* White background */
+    padding: 60px 20px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    
+}
+
+.btn-iphone {
+    background-color: #007aff; /* iOS blue color */
+    color: white;
+}
+
+.btn-android {
+    background-color: #3ddc84; /* Android green color */
+    color: black;
+}
+
+.hero-image {
+    flex: 1;
+    /* You would use CSS positioning for the abstract yellow/orange background */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Stack columns vertically on mobile */
+    }
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .cta-buttons {
+        text-align: center;
+    }
+}
+
+
+
+.hero-section {
+    background-color: #ffffff; /* White background */
+    padding: 60px 20px;
+}
+
+.hero-container {
+    display: flex; /* Uses Flexbox for the layout */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content on the page */
+}
+
+.hero-text {
+    flex: 1; /* Makes this column take up available space */
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 1px solid transparent;
+}
+
+.btn-iphone {
+    background-color: #007aff; /* Blue button color */
+    color: white;
+}
+
+.btn-android {
+    background-color: transparent;
+    border-color: #333;
+    color: #333;
+}
+
+.hero-image {
+    flex: 1; /* Makes this column take up available space */
+}
+
+/* Media query for responsiveness (stacks columns on smaller screens) */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; 
+    }
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .hero-image {
+        text-align: center;
+    }
+}
+
+
+
+
+
+.top-info-section {
+    display: flex; /* Arranges the cards side-by-side */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f7fa; /* Light background for the overall section area */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1; /* Makes cards take up equal space */
+    margin: 0 10px;
+}
+
+.story-card {
+    background-color: #ffc107; /* Yellow background */
+}
+
+.help-center-card {
+    background-color: #ffffff; /* White background */
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.btn-story {
+    background-color: #007aff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-help {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 20px; /* Pill-shaped button */
+    display: inline-block;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 600px) {
+    .top-info-section {
+        flex-direction: column; /* Stacks cards vertically */
+    }
+    .info-card {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+.reviews-section {
+    background-color: #ff9800; /* Main orange background color */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reviews-section h2 {
+    margin-bottom: 40px;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3 column grid */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.review-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.stars {
+    color: #fdd835; /* Yellow color for stars */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.reviewer-name {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.featured-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    gap: 20px;
+}
+
+.featured-in span {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.logo {
+    max-height: 40px; /* Adjust logo size */
+    opacity: 0.7; /* Makes logos look less prominent */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .review-grid {
+        grid-template-columns: 1fr; /* Stack reviews vertically on mobile */
+    }
+}
+
+
+
+
+
+
+.security-features {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f7fa; /* Light background color as seen in the image */
+}
+
+.security-features h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    /* Creates 3 columns of equal width with a gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Space between the items */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Centers text within each block */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 40px; /* Adjust size as needed for actual icons */
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        /* Changes to 1 column on screens smaller than 768px */
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+.cta-blue-section {
+    background-color: #007aff; /* Main blue background color */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta-content p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.btn-cta-iphone, .btn-cta-android {
+    background-color: white;
+    color: #007aff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+
+
+
+.insights-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.insights-section h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.insight-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image corners are rounded with the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.insight-card img {
+    width: 100%; /* Makes image fill the card width */
+    height: auto;
+    display: block;
+}
+
+.card-text {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-text h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card-text p {
+    font-size: 0.85em;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+    .insights-grid {
+        grid-template-columns: 1fr; /* Stacks cards vertically on mobile */
+    }
+}
+
+
+
+/* Basic Reset and Footer Background */
+footer {
+    background-color: #1a237e; /* Deep blue background color */
+    color: white;
+    padding: 40px 20px 0;
+    font-size: 0.9em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    display: flex; /* Uses Flexbox for main layout */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-col {
+    flex: 1; /* Makes columns flexible */
+    min-width: 250px; /* Prevents columns from getting too narrow */
+    margin: 20px 10px 0;
+}
+
+.footer-col h4 {
+    border-bottom: 1px solid #4a549d; /* Underline for headings */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Social Icons Styling (placeholders used) */
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #1a237e;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Quick Links Styling */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+/* Newsletter Section Styling */
+.newsletter-box {
+    background-color: #ff9800; /* Orange box background */
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+}
+
+.newsletter-box h4, .newsletter-box p {
+    color: black;
+}
+
+.newsletter-box input[type="email"] {
+    width: 65%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-box button {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background-color: #1a237e; /* Dark blue button */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Bottom Copyright Section */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #4a549d;
+    font-size: 0.8em;
+}
+
+/* Media Query for Responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stacks columns vertically */
+    }
+    .footer-col {
+        margin: 15px 0;
+    }
+    .newsletter-box input, .newsletter-box button {
+        width: 100%; /* Full width for input and button on mobile */
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Base Grid Setup */
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* The Card Styling */
+.insight-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Crucial for smooth animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect Animation */
+.insight-card:hover {
+    /* Lifts the card up slightly */
+    transform: translateY(-10px); 
+    
+    /* Makes the shadow deeper to simulate height */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Image Zoom Effect */
+.insight-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.insight-card:hover img {
+    /* Subtle zoom on the image inside the card */
+    transform: scale(1.05);
+}
+
+/* Text Padding */
+.card-text {
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Container Layout */
+.security-features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background to make cards pop */
+}
+
+.security-features h2 {
+    margin-bottom: 40px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    /* Responsive grid: columns adjust based on screen size */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Feature Item Styling */
+.feature-item {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    text-align: left;
+    
+    /* Smooth transition for all properties */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    top: 0;
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect Animation */
+.feature-item:hover {
+    /* Lift effect */
+    top: -8px; 
+    border-color: #007bff; /* Change to your primary brand color */
+    background-color: #ffffff;
+    
+    /* Subtle shadow that feels like depth */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item:hover .icon {
+    /* Makes the icon pop or wiggle on hover */
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Typography Inside Cards */
+.feature-item h3 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+    color: #222;
+}
+
+.feature-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+
+
+
